@@ -9,3 +9,10 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+
+.top-bar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}

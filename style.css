@@ -35,31 +35,16 @@ body {
 /*  Comentario en CSS
     Que las 3 ultimas fotos  queden en el medio de los otros
 */
-.fotos-all{
-    position: relative;
-    top: 80%;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    overflow: auto;
-    padding: 20px 100px;
-    max-height: 500px;
-    justify-items: center;
+.foto-aml{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+
 }
 
-/*
-    Las imagenes no queden tan grandes y al pasar cursor se agranden un poco
-
-*/
-
-.fotos-all img{
-    width: 50%;
-    height: auto;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.foto-aml img{
+    width: 100%;
+    max-width: 600px;
     border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-.fotos-all img:hover{
-    transform: scale(1.05);
 }

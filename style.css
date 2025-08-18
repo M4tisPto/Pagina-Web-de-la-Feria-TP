@@ -11,11 +11,14 @@ body {
 }
 
 .top-bar {
-    background-color: #4CAF50;
+    background-color: #427cb3;
     color: white;
     padding: 10px 100px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border-end-start-radius: 100px;
+    border-end-end-radius: 100px;
 }
 
 .top-bar img{
@@ -26,6 +29,37 @@ body {
 .top-bar h1{
     padding: 30px;
 }
-aside img{
-    height: 10px;
+
+
+
+/*  Comentario en CSS
+    Que las 3 ultimas fotos  queden en el medio de los otros
+*/
+.fotos-all{
+    position: relative;
+    top: 80%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow: auto;
+    padding: 20px 100px;
+    max-height: 500px;
+    justify-items: center;
+}
+
+/*
+    Las imagenes no queden tan grandes y al pasar cursor se agranden un poco
+
+*/
+
+.fotos-all img{
+    width: 50%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.fotos-all img:hover{
+    transform: scale(1.05);
 }

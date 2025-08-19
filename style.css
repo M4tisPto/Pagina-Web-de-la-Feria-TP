@@ -63,3 +63,29 @@ position: absolute;
   top: 33%;
   left: 39.6%;
 }
+#anthony-parra {
+position: absolute;
+  background-color: #800000;
+  width: 50px;
+  height: 50px;
+  top: 27%;
+  left: 60.5%;
+}
+
+#jose-moena {
+position: absolute;
+  background-color: #808000;
+  width: 50px;
+  height: 50px;
+  top: 25%;
+  left: 73%;
+}
+
+#hugo-torres {
+position: absolute;
+  background-color: #800080;
+  width: 50px;
+  height: 50px;
+  top: 25%;
+  left: 79.5%;
+}

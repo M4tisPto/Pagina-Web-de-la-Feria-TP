@@ -1,6 +1,18 @@
-#image-map{
-    max-width: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.foto-aml img {
+    width: 80%; /* o cualquier porcentaje que necesites */
     height: auto;
     display: block;
-    margin: auto;
 }

@@ -1,50 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.top-bar {
-    background-color: #427cb3;
-    color: white;
-    padding: 10px 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-end-start-radius: 100px;
-    border-end-end-radius: 100px;
-}
-
-.top-bar img{
-    height: 100px;
-}
-
-
-.top-bar h1{
-    padding: 30px;
-}
-
-
-
-/*  Comentario en CSS
-    Que las 3 ultimas fotos  queden en el medio de los otros
-*/
-.foto-aml{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-
-}
-
-.foto-aml img{
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
+#image-map{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
 }

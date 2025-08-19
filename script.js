@@ -1,7 +1,6 @@
 function scaleImageMap() {
     const img = document.getElementById('map-image');
     if (!img.complete) {
-        // Si la imagen aún no terminó de cargar, esperar
         img.addEventListener('load', scaleImageMap);
         return;
     }
@@ -39,3 +38,4 @@ function scaleImageMap() {
 
 window.addEventListener('load', scaleImageMap);
 window.addEventListener('resize', scaleImageMap);
+

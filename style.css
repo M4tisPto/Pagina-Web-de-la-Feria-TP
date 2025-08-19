@@ -30,40 +30,36 @@ body {
 }
 
 #vicente-garcia {
-        position: absolute;
+    position: absolute;
     background-color: red;
     width: 50px;
     height: 50px;
-    top: 19%;
-    left: 55%;
+    top: 26%;
+    left: 54.5%;
 }
 
 #mati-ramos{
-    position: absolute;
-    background-color: violet;
-    width: 50px;
-    height: 50px;
-    top: 5%;
-    right: 22%;
+position: absolute;
+  background-color: violet;
+  width: 50px;
+  height: 50px;
+  top: 15%;
+  right: 22%;
 }
 
 #alexis-rojas {
-    position: absolute;
-    background-color: rgb(0, 51, 128);
-    width: 50px;
-    height: 50px;
-    top: 21.5%;
-    left: 67.6%;
+position: absolute;
+  background-color: #003380;
+  width: 50px;
+  height: 50px;
+  top: 28.5%;
+  left: 67.4%;
 }
-
-
-.foto-aml img {
-    width: 50%;
-    height: auto;
-    display: block;
-    display: flex;
-    margin: 0 auto;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
+#yudany-artudillo {
+position: absolute;
+  background-color: #008080;
+  width: 50px;
+  height: 50px;
+  top: 33%;
+  left: 39.6%;
 }

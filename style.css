@@ -81,6 +81,14 @@ position: absolute;
   left: 73%;
 }
 
+#joshua {
+position: absolute;
+  background-color: #008000;
+  width: 50px;
+  height: 50px;
+  top: 20%;
+  left: 85%;
+}
 #hugo-torres {
 position: absolute;
   background-color: #800080;

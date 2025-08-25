@@ -22,7 +22,7 @@ body {
 }
 
 .img-container {
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100%;
     max-width: 1200px;
     margin-left: auto;
@@ -76,7 +76,6 @@ body {
     text-align: center;
 }
 
-/* POSICIONES MANTENIDAS */
 #vicente-garcia { top: 26%; left: 54.5%; }
 #mati-ramos { top: 15%; left: 75%; }
 #alexis-rojas { top: 28.5%; left: 67.4%; }
@@ -94,7 +93,7 @@ body {
 #caty { top: 40%; left: 76.5%; }
 #gori { top: 15%; left: 44.1%; }
 #felix { top: 15%; left: 27.7%; }
-#idr-urnamexd { top: 14%; left: 20.5%; }
+#oscar { top: 14%; left: 20.5%; }
 #piba { top: 33%; left: 48.8%; }
 #mathew { top: 17%; left: 67.1%; }
 #pibe1 { top: 15%; left: 57.7%; }
@@ -103,3 +102,50 @@ body {
 #pibe4 { top: 24%; left: 25.5%; }
 #pibe5 { top: 23%; left: 17.9%; }
 #pibe6 { top: 23%; left: 41%; }
+
+.foto-aml h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #253675;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+    .img-container {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .box {
+        width: 5%;
+    }
+    .top-bar h1 {
+        font-size: 1.5rem;
+    }
+    .top-bar img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+/* Tablet*/
+
+@media (max-width: 480px) {
+    .img-container {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    .box {
+        width: 7%;
+    }
+    .top-bar h1 {
+        font-size: 1.2rem;
+    }
+    .top-bar img {
+        max-width: 80%;
+        height: auto;
+    }
+
+}

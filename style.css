@@ -1,252 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .img-container {
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100%;
-    max-width: 1200px; /* Puedes ajustar esto según tu diseño */
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-
-    /* Imagen como fondo */
-    background-image: url(Copia\ de\ TP\ AML\ \(51\).jpg);
+    background-image: url('Copia de TP AML (51).jpg');
     background-size: cover;
     background-position: center;
-
-    /* Escala proporcional */
-    aspect-ratio: 1365 / 768; /* proporción original de la imagen */
+    border-radius: 15px;
+    aspect-ratio: 1920 / 1080;
     position: relative;
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
 }
+
 
 .box {
     position: absolute;
-    width: 3.5%; /* ajustá el tamaño relativo del cuadrado */
+    width: 3.5%;
     aspect-ratio: 1 / 1;
     border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10;
 }
 
-/* Posiciones */
-#vicente-garcia {
-    background-color: red;
-    top: 26%;
-    left: 54.5%;
+.box a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
-#mati-ramos {
-    background-color: violet;
-    top: 15%;
-    left: 78%;
+/* TOP BAR MODIFICADA */
+.top-bar {
+    background-color: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
 }
 
-#alexis-rojas {
-    background-color: #003380;
-    top: 28.5%;
-    left: 67.4%;
+.top-bar img {
+    max-width: 550px;
 }
 
-#yudany-artudillo {
-    background-color: #008080;
-    top: 33%;
-    left: 39.6%;
+.top-bar h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #253675;
+    text-align: center;
 }
 
-#anthony-parra {
-    background-color: #800000;
-    top: 27%;
-    left: 60.5%;
+#vicente-garcia { top: 26%; left: 54.5%; }
+#mati-ramos { top: 15%; left: 75%; }
+#alexis-rojas { top: 28.5%; left: 67.4%; }
+#yudany-artudillo { top: 33%; left: 39.6%; }
+#anthony-parra { top: 27%; left: 60.5%; }
+#jose-moena { top: 25%; left: 73%; }
+#josue { top: 27%; left: 47.5%; }
+#hugo-torres { top: 25%; left: 79.5%; }
+#isidora { top: 34%; left: 31%; }
+#anabella { top: 35%; left: 22.5%; }
+#carlos { top: 25%; left: 33.9%; }
+#matias-sanchez { top: 25%; left: 10.5%; }
+#antonella { top: 37%; left: 58%; }
+#naomi { top: 37%; left: 68.5%; }
+#caty { top: 40%; left: 76.5%; }
+#gori { top: 15%; left: 44.1%; }
+#felix { top: 15%; left: 27.7%; }
+#oscar { top: 14%; left: 20.5%; }
+#constansa { top: 33%; left: 48.8%; }
+#mathew { top: 17%; left: 67.1%; }
+#ivan { top: 15%; left: 57.7%; }
+#lucas { top: 15%; left: 51.5%; }
+#javier-guerrero { top: 17%; left: 35.5%; }
+#benjamin { top: 24%; left: 25.5%; }
+#williams { top: 23%; left: 17.9%; }
+#cristian { top: 23%; left: 41%; }
+
+.foto-aml h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #253675;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-out forwards;
 }
 
-#jose-moena {
-    background-color: #808000;
-    top: 25%;
-    left: 73%;
+@media (max-width: 768px) {
+    .img-container {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .box {
+        width: 5%;
+    }
+    .top-bar h1 {
+        font-size: 1.5rem;
+    }
+    .top-bar img {
+        max-width: 90%;
+        height: auto;
+    }
 }
 
-#joshua {
-    background-color: #008000;
-    top: 20%;
-    left: 85%;
-}
+/* Tablet*/
 
-#hugo-torres {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
+@media (max-width: 480px) {
+    .img-container {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    .box {
+        width: 7%;
+    }
+    .top-bar h1 {
+        font-size: 1.2rem;
+    }
+    .top-bar img {
+        max-width: 80%;
+        height: auto;
+    }
 
-#alexis-cuevas {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-
-#ivan-figueroa {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-
-#lucas-martinez {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-
-#javi-guerrero {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-
-#isi-velazquez {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-
-#cristian-reyes {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-
-#oscar-quijon{} {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-
-#josue-penroz {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-
-#ana-palacios {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-#willi-lara {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-#coni-flore {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-#carl-baquedano {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-#matias-sanchez {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-#benja-olguin {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-#felix-berrios {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-#emilio-lazcano {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-#javier-faundez {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-#cristobal-gorigotia {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-#antonella-lobos {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-#cata-caripan {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
-}
-#bastian-albornoz {
-position: absolute;
-  background-color: #800080;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 79.5%;
 }

@@ -1,94 +1,70 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.top-bar{
-    background-color: #4c7aaf;
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-}
-
 .img-container {
     margin-top: 100px;
-    background-image: url('Copia\ de\ TP\ AML\ \(51\).jpg');
+    width: 100%;
+    max-width: 1200px; /* Puedes ajustar esto según tu diseño */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Imagen como fondo */
+    background-image: url(Copia\ de\ TP\ AML\ \(51\).jpg);
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 800px;
+
+    /* Escala proporcional */
+    aspect-ratio: 1365 / 768; /* proporción original de la imagen */
     position: relative;
 }
 
-#vicente-garcia {
+.box {
     position: absolute;
+    width: 3.5%; /* ajustá el tamaño relativo del cuadrado */
+    aspect-ratio: 1 / 1;
+    border-radius: 5px;
+}
+
+/* Posiciones */
+#vicente-garcia {
     background-color: red;
-    width: 50px;
-    height: 50px;
     top: 26%;
     left: 54.5%;
 }
 
-#mati-ramos{
-position: absolute;
-  background-color: violet;
-  width: 50px;
-  height: 50px;
-  top: 15%;
-  right: 22%;
+#mati-ramos {
+    background-color: violet;
+    top: 15%;
+    left: 78%;
 }
 
 #alexis-rojas {
-position: absolute;
-  background-color: #003380;
-  width: 50px;
-  height: 50px;
-  top: 28.5%;
-  left: 67.4%;
+    background-color: #003380;
+    top: 28.5%;
+    left: 67.4%;
 }
+
 #yudany-artudillo {
-position: absolute;
-  background-color: #008080;
-  width: 50px;
-  height: 50px;
-  top: 33%;
-  left: 39.6%;
+    background-color: #008080;
+    top: 33%;
+    left: 39.6%;
 }
+
 #anthony-parra {
-position: absolute;
-  background-color: #800000;
-  width: 50px;
-  height: 50px;
-  top: 27%;
-  left: 60.5%;
+    background-color: #800000;
+    top: 27%;
+    left: 60.5%;
 }
 
 #jose-moena {
-position: absolute;
-  background-color: #808000;
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 73%;
+    background-color: #808000;
+    top: 25%;
+    left: 73%;
 }
 
 #joshua {
-position: absolute;
-  background-color: #008000;
-  width: 50px;
-  height: 50px;
-  top: 20%;
-  left: 85%;
+    background-color: #008000;
+    top: 20%;
+    left: 85%;
 }
+
 #hugo-torres {
 position: absolute;
   background-color: #800080;
